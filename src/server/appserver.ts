@@ -26,11 +26,9 @@ app.get('/keywords', cors(corsOptions), (req,res)=>{
     let text = req.body.text;
     console.log(text);
     comprehender.comprehendText(text).then(response => {
-        Output = response.result
         res.send((JSON.stringify(response.result.keywords, null, 2)));
     })
     .catch(err => {
-        Output = err
         res.send(err);
     });
 
