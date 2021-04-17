@@ -1,12 +1,12 @@
 const fs = require('fs');
 const NaturalLanguageUnderstandingV1 = require('ibm-watson/natural-language-understanding/v1');
 const { IamAuthenticator } = require('ibm-watson/auth');
+const APIkey = require('../../abma.ts');
 const nlu = new NaturalLanguageUnderstandingV1({
-    authenticator: new IamAuthenticator({ apikey: '270CauCGrsjx2d_83oVaXfAH2tGQjwzBEbd0Jcz1eIoO' }),
+    authenticator: new IamAuthenticator({ apikey: APIkey }),
     version: '2018-04-05',
     serviceUrl: 'https://api.eu-gb.natural-language-understanding.watson.cloud.ibm.com'
 });
-let Output;
 module.exports = class Comprehender {
     comprehendText(text) {
             return nlu.analyze(
