@@ -33,6 +33,7 @@ export class CardsContainerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /* 
   onToggle(card: any) {
     //Toggle in UI
 
@@ -47,6 +48,8 @@ export class CardsContainerComponent implements OnInit {
       });
     }
   }
+
+  */
 
 
 }

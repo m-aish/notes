@@ -7,12 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PanelsComponent implements OnInit {
 
+  /*
   @Input() cards: Array<any>;
+  */
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  /*
 
   //Function to set classes dynamically
   showAndHide(panel: number) {
@@ -23,5 +27,6 @@ export class PanelsComponent implements OnInit {
     }
     return classes;
   }
+*/
 
 }
