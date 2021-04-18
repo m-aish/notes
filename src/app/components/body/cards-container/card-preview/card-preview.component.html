@@ -1,4 +1,4 @@
-<div class="column">
+<div class="column is-one-third">
     <h2 class="is-size-3 mb-5 has-text-weight-semibold">Your Flashcards are ready!</h2>
     <p class="is-size-5 mt-5 pt-2">Scan/capture and upload your handwritten notes! Our OCR software will
         convert your handwriting into plain text and generate flashcards, mind-maps and so much more for
@@ -6,22 +6,22 @@
 
     </p>
     <button class="button is-size-5 mt-5 mr-4 has-text-weight-semibold"><a href="">Download</a></button>
-
+    <!-- 
     <button class="button is-size-5 mt-5 has-text-weight-semibold" [routerLink]="['/flashcards']">
         Take a Look!
-        <!-- <img class="open-icon ml-2" src="../../../../../../../assets/images/open.svg"
-            alt="Open in new tab"> -->
-    </button>
+        <img class="open-icon ml-2" src="../../../../../../../assets/images/open.svg"
+            alt="Open in new tab"> 
+    </button> -->
 </div>
-<div class="column is-half flashcards has-text-centered">
+<div class="column flashcards has-text-centered">
     <!-- <h3 class=" is-size-4 pt-6 has-text-weight-semibold">Chapter: Cognitive Therapy</h3> -->
     <div class="card-stack">
-        <ul class="flash-card-list" (click)="getQuestions()">
+        <ul class="flash-card-list">
             <li class="flash-card"></li>
             <li class="flash-card"></li>
             <li class="flash-card"></li>
             <li class="flash-card"></li>
-            <li class="flash-card is-size-5 py-4 px-4">{{questions[0].QuestionPrompt.replaceAll('"','') | json}}</li>
+            <li class="flash-card is-size-5 py-4 px-4">{{questions.questionsfromdl[0].QuestionPrompt | json}}</li>
         </ul>
     </div>
 </div>

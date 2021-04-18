@@ -21,5 +21,18 @@
         </div>
     </div>
 </div>
-<!-- <app-panels [cards]="cards"></app-panels> -->
-<app-panels></app-panels>
+<div class="section panels-container">
+    <div class="container">
+        <div class="columns is-multiline">
+
+            <app-notes-app-panel class="column is-full columns is-vcentered is-multiline" *ngIf="cards[0].selected">
+            </app-notes-app-panel>
+            <app-upload-panel class="column is-full columns is-vcentered is-multiline" *ngIf="cards[1].selected">
+            </app-upload-panel>
+            <app-url-panel class="column is-full columns is-vcentered is-multiline" *ngIf="cards[2].selected">
+            </app-url-panel>
+
+
+        </div>
+    </div>
+</div>

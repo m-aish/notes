@@ -38,7 +38,7 @@ app.get('/concepts', cors(corsOptions), (req, res) => {
         });
 
 });
-app.post('/keywordsurl', cors(corsOptions), (req, res) => {
+app.get('/keywordsurl', cors(corsOptions), (req, res) => {
     let url = req.headers.url;
     console.log(url);
     comprehender.comprehendUrl(url).then(response => {

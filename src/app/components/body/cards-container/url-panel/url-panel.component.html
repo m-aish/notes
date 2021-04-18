@@ -1,0 +1,57 @@
+<div class="column is-half">
+    <h2 class="is-size-3 mb-5 has-text-weight-semibold">Enter a URL</h2>
+    <p class="is-size-5 mt-5 pt-2">Scan/capture and upload your handwritten notes! Our OCR software will
+        convert your handwriting into plain text and generate flashcards, mind-maps and so much more for
+        you.
+    </p>
+    <!-- <button class="button is-size-5 mt-5 has-text-weight-semibold"><a href="">Accepted Formats:
+            .jpeg, .png,
+            .pdf</a></button> -->
+</div>
+<div class="column is-half has-text-centered">
+    <div class="is-centered">
+        <input id="notes-url" class="input" type="url" placeholder="Enter a URL with the notes" #input>
+        <button class="button is-size-5 mt-5 has-text-weight-semibold" (click)="getQuestions(input)">Generate
+            Flashcards!</button>
+    </div>
+
+</div>
+
+<div class="column is-one-third" *ngIf="questions">
+    <h2 class="is-size-3 mb-5 has-text-weight-semibold">Your Flashcards are ready!</h2>
+    <p class="is-size-5 mt-5 pt-2">Scan/capture and upload your handwritten notes! Our OCR software will
+        convert your handwriting into plain text and generate flashcards, mind-maps and so much more for
+        you.
+
+    </p>
+    <button class="button is-size-5 mt-5 mr-4 has-text-weight-semibold"><a href="">Download</a></button>
+    <!-- 
+        <button class="button is-size-5 mt-5 has-text-weight-semibold" [routerLink]="['/flashcards']">
+            Take a Look!
+            <img class="open-icon ml-2" src="../../../../../../../assets/images/open.svg"
+                alt="Open in new tab"> 
+        </button> -->
+</div>
+<div class="column is-two-thirds flashcards has-text-centered" *ngIf="questions">
+    <!-- <h3 class=" is-size-4 pt-6 has-text-weight-semibold">Chapter: Cognitive Therapy</h3> -->
+
+    <div class="card-stack">
+        <a class="buttons prev">
+            < </a>
+                <ul class="flash-card-list">
+                    <li class=" flash-card">
+                    </li>
+                    <li class="flash-card"></li>
+                    <li class="flash-card"></li>
+                    <li class="flash-card"></li>
+                    <li class="flash-card is-size-5 py-4 px-4">
+                        <!-- {{questions.questionsfromdl[0].QuestionPrompt | json}} -->
+                        Hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consectetur
+                        officiis esse suscipit pariatur maxime amet dolore? Iusto qui ipsa est amet consequatur aliquam
+                        eligendi deleniti alias. Incidunt odio sunt atque, quas fuga asperiores praesentium illo nobis
+                        deleniti sit.
+                    </li>
+                </ul>
+                <a class="buttons next"> > </a>
+    </div>
+</div>
