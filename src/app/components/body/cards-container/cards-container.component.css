@@ -1,0 +1,25 @@
+.cards-container {
+    margin-top: -35px;
+}
+
+.cards-container .card {
+    box-shadow: none;
+    background-color: transparent;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cards-container .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container .card img {
+    width: auto;
+    max-height: 100px;
+}
+
+.cards-container .card:hover {
+    background-color: var(--prim-color-2);
+    transform: scale(1.1);
+}

@@ -1,7 +1,14 @@
 /* --- CSS Variables --- */
 
 :root {
-    --prim-color-1: #202F53;
-    --prim-color-2: #FFFAEF;
+    --prim-color-1: #fff;
+    --prim-color-2: #fafafa;
+    --spl-color-1: #202F53;
+    --spl-color-2: #FFFAEF;
     --font-color-1: #fff;
+    --shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 5%);
+}
+
+a:hover, .button a {
+    color: var(--spl-color-1) !important;
 }

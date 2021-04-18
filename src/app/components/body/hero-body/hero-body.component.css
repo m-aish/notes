@@ -1,0 +1,10 @@
+.hero-body img {
+    width: auto;
+}
+
+@media screen and (min-width:1216px) {
+    .hero-body img {
+        width: auto;
+        height: 465px;
+    }
+}

@@ -1,0 +1,12 @@
+img.open-icon {
+    width: 19px;
+}
+
+.flashcards {
+    width: 550px;
+    height: 300px;
+    background-color: var(--prim-color-1);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    margin: auto;
+}
