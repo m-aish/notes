@@ -1,4 +1,4 @@
-<div class="column">
+<div class="column is-half">
     <h2 class="is-size-3 mb-5 has-text-weight-semibold">Upload Your Handwritten Notes</h2>
     <p class="is-size-5 mt-5 pt-2">Scan/capture and upload your handwritten notes! Our OCR software will
         convert your handwriting into plain text and generate flashcards, mind-maps and so much more for
@@ -8,7 +8,7 @@
             .jpeg, .png,
             .pdf</a></button>
 </div>
-<div class="column has-text-centered">
+<div class="column is-half has-text-centered">
     <div id="notes-file-upload" class="file is-medium is-boxed has-name is-centered">
         <label class="file-label">
             <input class="file-input" type="file" name="notes">
@@ -31,3 +31,25 @@
                 name="mind-map" id="#mind-map-check" />Mind-Map</label>
     </p>
 </div>
+<!-- 
+<div class="column is-one-third" *ngIf="questions">
+    <h2 class="is-size-3 mb-5 has-text-weight-semibold">Your Flashcards are ready!</h2>
+    <p class="is-size-5 mt-5 pt-2">Scan/capture and upload your handwritten notes! Our OCR software will
+        convert your handwriting into plain text and generate flashcards, mind-maps and so much more for
+        you.
+
+    </p>
+    <button class="button is-size-5 mt-5 mr-4 has-text-weight-semibold"><a href="">Download</a></button>
+    
+</div>
+<div class="column is-two-thirds flashcards has-text-centered" *ngIf="questions">
+    <div class="card-stack">
+        <ul class="flash-card-list">
+            <li class="flash-card"></li>
+            <li class="flash-card"></li>
+            <li class="flash-card"></li>
+            <li class="flash-card"></li>
+            <li class="flash-card is-size-5 py-4 px-4">{{questions.questionsfromdl[0].QuestionPrompt | json}}</li>
+        </ul>
+    </div>
+</div> -->

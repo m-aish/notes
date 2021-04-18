@@ -1,0 +1,51 @@
+<div class="column is-one-third">
+    <h2 class="is-size-3 mb-5 has-text-weight-semibold">Enter your Notes into the Textbox</h2>
+    <p class="is-size-5 mt-5 pt-2">Scan/capture and upload your handwritten notes! Our OCR software will
+        convert your handwriting into plain text and generate flashcards, mind-maps and so much more for
+        you.
+    </p>
+    <!-- <button class="button is-size-5 mt-5 has-text-weight-semibold"><a href="">Accepted Formats:
+            .jpeg, .png,
+            .pdf</a></button> -->
+</div>
+<div class="column is-two-thirds has-text-centered">
+    <div class="is-medium is-centered mt-5">
+        <textarea class="textarea" placeholder="Enter your notes..." rows="10" #notestext></textarea>
+        <button class="button is-size-5 mt-5 has-text-weight-semibold" (click)="getQuestions(notestext)">Generate
+            Flashcards!</button>
+    </div>
+
+</div>
+
+<div class="column is-one-third" *ngIf="questions">
+    <h2 class="is-size-3 mb-5 has-text-weight-semibold">Your Flashcards are ready!</h2>
+    <p class="is-size-5 mt-5 pt-2">Scan/capture and upload your handwritten notes! Our OCR software will
+        convert your handwriting into plain text and generate flashcards, mind-maps and so much more for
+        you.
+
+    </p>
+    <button class="button is-size-5 mt-5 mr-4 has-text-weight-semibold"><a href="">Download</a></button>
+    <!-- 
+        <button class="button is-size-5 mt-5 has-text-weight-semibold" [routerLink]="['/flashcards']">
+            Take a Look!
+            <img class="open-icon ml-2" src="../../../../../../../assets/images/open.svg"
+                alt="Open in new tab"> 
+        </button> -->
+</div>
+<div class="column is-two-thirds flashcards has-text-centered" *ngIf="questions">
+    <!-- <h3 class=" is-size-4 pt-6 has-text-weight-semibold">Chapter: Cognitive Therapy</h3> -->
+
+    <div class="card-stack">
+        <a class="buttons prev">
+            < </a>
+                <ul class="flash-card-list">
+                    <li class="flash-card" *ngFor="let question of questions.ibmkeywords">{{question.text |
+                        json}}
+                    </li>
+                    <!-- <li class="flash-card is-size-5 py-4 px-4">{{question |
+                            json}}
+                        </li> -->
+                </ul>
+                <a class="buttons next"> > </a>
+    </div>
+</div>
