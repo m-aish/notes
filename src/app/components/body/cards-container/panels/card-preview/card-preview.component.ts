@@ -3,7 +3,8 @@ import { QuestionsService } from '../../../../../services/questions.service';
 @Component({
   selector: 'app-card-preview',
   templateUrl: './card-preview.component.html',
-  styleUrls: ['./card-preview.component.css']
+  styleUrls: ['./card-preview.component.css'],
+  providers: [QuestionsService]
 })
 export class CardPreviewComponent implements OnInit {
   questions: any;
