@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
@@ -14,7 +15,7 @@ import { UploadPanelComponent } from './components/body/cards-container/panels/u
 import { UrlPanelComponent } from './components/body/cards-container/panels/url-panel/url-panel.component';
 import { NotesAppPanelComponent } from './components/body/cards-container/panels/notes-app-panel/notes-app-panel.component';
 import { CardPreviewComponent } from './components/body/cards-container/panels/card-preview/card-preview.component';
-
+import {QuestionsService} from './services/questions.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,9 +33,10 @@ import { CardPreviewComponent } from './components/body/cards-container/panels/c
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [QuestionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
