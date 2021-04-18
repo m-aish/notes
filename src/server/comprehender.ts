@@ -28,14 +28,6 @@ module.exports = class Comprehender {
                     keywords: {}
                 }
             })
-            //.then(response => {
-            //     Output = response.result
-            //     //console.log(JSON.stringify(response.result, null, 2));
-            // })
-            // .catch(err => {
-            //     Output = err;
-            //     //console.log('error: ', err);
-            // })
     }
 }
 
