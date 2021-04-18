@@ -3,7 +3,8 @@ import {QuestionsService} from '../../../../../services/questions.service';
 @Component({
   selector: 'app-card-preview',
   templateUrl: './card-preview.component.html',
-  styleUrls: ['./card-preview.component.css']
+  styleUrls: ['./card-preview.component.css'],
+  providers: [QuestionsService]
 })
 export class CardPreviewComponent implements OnInit {
   questions: any;
@@ -13,9 +14,10 @@ export class CardPreviewComponent implements OnInit {
   ngOnInit(): void {
   }
   getQuestions(){
-    this.questions = this.questionsService.getQuestions("The Vision API client libraries accesses the global API endpoint (vision.googleapis.com) by default. To store and process your data in the European Union only, you need to explicitly set the endpoint (eu-vision.googleapis.com). The code samples below show how to configure this setting.");
+    //hardcoded for now
+    this.questions = this.questionsService.getQuestionsfromtext("The Vision API client libraries accesses the global API endpoint (vision.googleapis.com) by default. To store and process your data in the European Union only, you need to explicitly set the endpoint (eu-vision.googleapis.com). The code samples below show how to configure this setting.");
     if (this.questions)
-    console.log(this.questions[0])
+    console.log(this.questions)
     //console.log(this.questions);
   }
 }
