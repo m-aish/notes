@@ -11,19 +11,19 @@ export class CardsContainerComponent implements OnInit {
     {
       heading: "Upload your Notes",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur adipisicing elit.",
-      icon: "far fa-sticky-note",
+      icon: "../../../assets/images/file-alt-regular.svg",
       selected: false
     },
     {
       heading: "Notes from a URL",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur adipisicing elit.",
-      icon: "fas fa-link",
+      icon: "../../../assets/images/link-solid.svg",
       selected: false
     },
     {
-      heading: "Link your Notes App",
+      heading: "Copy & paste your Notes",
       description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet consectetur adipisicing elit.",
-      icon: "fas fa-tablet-alt",
+      icon: "../../../assets/images/quote-right-solid.svg",
       selected: false
     }
   ];

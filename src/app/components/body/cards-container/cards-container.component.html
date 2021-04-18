@@ -1,4 +1,4 @@
-<div class="section cards-container">
+<div id="submit-notes" class="section cards-container">
     <div class="container">
         <div class="columns has-text-centered">
             <div class="column" *ngFor="let card of cards">
@@ -14,7 +14,7 @@
                             {{card.description}}
 
                         </div>
-                        <i class="{{card.icon}}"></i>
+                        <img src="{{card.icon}}" />
                     </div>
                 </div>
             </div>

@@ -6,9 +6,13 @@
     --spl-color-1: #202F53;
     --spl-color-2: #FFFAEF;
     --font-color-1: #fff;
-    --shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 5%);
+    --shadow-1: 0 0.5em 1em -0.125em rgb(10 10 10 / 5%);
 }
 
 a:hover, .button a {
     color: var(--spl-color-1) !important;
+}
+
+html {
+    scroll-behavior: smooth;
 }

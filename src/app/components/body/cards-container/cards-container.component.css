@@ -16,7 +16,8 @@
 
 .cards-container .card img {
     width: auto;
-    max-height: 100px;
+    max-height: 50px;
+    opacity: 0.8;
 }
 
 .cards-container .card:hover {
