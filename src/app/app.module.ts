@@ -15,7 +15,10 @@ import { UploadPanelComponent } from './components/body/cards-container/panels/u
 import { UrlPanelComponent } from './components/body/cards-container/panels/url-panel/url-panel.component';
 import { NotesAppPanelComponent } from './components/body/cards-container/panels/notes-app-panel/notes-app-panel.component';
 import { CardPreviewComponent } from './components/body/cards-container/panels/card-preview/card-preview.component';
-import {QuestionsService} from './services/questions.service';
+import { AppRoutingModule } from './components/app-routing/app-routing.module';
+import { QuestionsService } from './services/questions.service';
+import { FlashcardsComponent } from './components/pages/flashcards/flashcards.component';
+import { HomeComponent } from './components/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,12 +32,15 @@ import {QuestionsService} from './services/questions.service';
     UploadPanelComponent,
     UrlPanelComponent,
     NotesAppPanelComponent,
-    CardPreviewComponent
+    CardPreviewComponent,
+    FlashcardsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [QuestionsService],
   bootstrap: [AppComponent]
